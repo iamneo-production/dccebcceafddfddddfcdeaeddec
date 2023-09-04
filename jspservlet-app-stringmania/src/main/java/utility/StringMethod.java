@@ -1,33 +1,36 @@
 package utility;
 
 public class StringMethod {
-//	Enter the code here....
 private String input;
-    
 public String getInput() {
-    return input;
+return input;
 }
 public void setInput(String input) {
-    this.input = input;
+this.input = input;
+}
+public String lower(String input)
+{
+return input.toLowerCase();
+
+}
+public String upper(String input)
+{
+return input.toUpperCase();
+
+}
+public String firstCharacter(String input)
+
+{
+return input.substring(0,1);
+}
+public String length(String input)
+{
+return String.valueOf(input.length());
+}
+public String trim(String input)
+{
+return input.trim();
 }
 
-public String lower(String input) {
-    return input.toLowerCase();
-}
-
-public String upper(String input) {
-    return input.toUpperCase();
-}
-
-public String length(String input) {
-    return Integer.toString(input.length());
-}
-
-public String trim(String input) {
-    return input.trim();
-}
-
-public String firstCharacter(String input) {
-    return Character.toString(input.charAt(0));
-}
+// Enter the code here....
 }
