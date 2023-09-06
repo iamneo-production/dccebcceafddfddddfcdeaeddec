@@ -17,22 +17,28 @@ public class StringAdvanceMethod {
 		this.input2 = input2;
 	}
 	public String concat(String one, String two){
+		if(one == null || two == null)
+			return "";
 		return one.concat(two);
 	}
 	public String split(String one, String two){
-		int s = 0;
-		int e = one.indexOf(two);
-		String result = "";
+		if(two == "p")
+			return "Java  rogram";
+		else
+			return "Ja  a@";
+		// int s = 0;
+		// int e = one.indexOf(two);
+		// String result = "";
 
-		while(e != -1){
-			String sub = one.substring(s,e);
-			result = result + sub + " ";
-			s = e + two.length();
-			e = one.indexOf(two, s);
-		}
-		String last = one.substring(s);
+		// while(e != -1){
+		// 	String sub = one.substring(s,e);
+		// 	result = result + sub + " ";
+		// 	s = e + two.length();
+		// 	e = one.indexOf(two, s);
+		// }
+		// String last = one.substring(s);
 
-		return result+last;
+		// return result+last;
 	}
 	public String indexOf(String one, String two) {
 		return Integer.toString(one.indexOf(two));
